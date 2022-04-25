@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+  }
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      color: #ffffff;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    #form-wrap{
+      width: 650px;
+    }
+    #form{
+      background-color: #272646;
+      padding: 25px;
+      margin: auto auto;
+    }
+    #submit{
+      width: 100%;
+      padding: 10px;
+      background-color: #37af65;
+      color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+    }
+    .input-box{
+      width: 100%;
+      height: 35px;
+      border-radius: 5px;
+      padding-left: 10px;
+      color: #000000;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+    }
+    #name-error, #email-error, #pnumber-error, #pnumber-error-2, #address-error, #password-error, #confirm-password-error,
+     #name-required, #email-required, #pnumber-required, #address-required, #password-required, #confirm-required, #sex-required {
+        padding: 0;
+        margin: 0;
+        color: red;
+        font-size: 10px;
+    }
+    .inline {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media (max-width: 650px) {
+      #form-wrap{
+          width: 100%;
+        }
+    }
+    

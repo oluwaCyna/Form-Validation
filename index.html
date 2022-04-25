@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="form-wrap">
+        <form id="form" name="form">
+            <div class="inline"><label for="fullname" id="name-label">Full name</label><p id="name-required"></p></div>
+            <input type="text" id="fullname" class="input-box" name="fullname" placeholder="Enter your full name"><p id="name-error" ></p><br/>
+            
+            <div class="inline"><label for="email" id="email-label">Email</label><p id="email-required" ></p></div>
+            <input type="text" id="email" class="input-box" name="email" placeholder="Enter your email"><p id="email-error" ></p><br/>
+            
+            <div class="inline"><label for="number" id="number-label">Phone number</label><p id="pnumber-required" ></p></div>
+            <input type="number" id="number" class="input-box" name="pnumber" placeholder="e.g 080..." ><p id="pnumber-error" ></p><p id="pnumber-error-2" ></p><br/>
+
+            <div class="inline"><label for="address" id="address-label">Address</label><p id="address-required" ></p></div>
+            <input type="text" id="address" class="input-box" name="address" placeholder="Enter your Address"><p id="address-error" ></p><br/>
+
+            <div class="inline"><label for="radio-tittle">Sex</label><p id="sex-required" ></p></div>
+            <input type = "radio" id="male" name="radio" value="Male">
+            <label for="male">Male</label><br/>
+            <input type = "radio" id="female" name="radio" value="Female">
+            <label for="female">Female</label><br/>
+            <input type = "radio" id="others" class="radio-check" name="radio" value="Others">
+            <label for="others">Others</label><br/><br/>
+
+            <div class="inline"><label for="password" id="password-label">Password</label><p id="password-required" ></p></div>
+            <input type="password" id="password" class="input-box" name="password" placeholder="" ><p id="password-error" ></p><br/>
+
+            <div class="inline"><label for="confirm-password" id="confirm-password-label">Confirm Password</label></div>
+            <input type="password" id="confirm-password" class="input-box" name="confirm-password" placeholder=""><p id="confirm-password-error" ></p><br/>
+
+            <button value="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
